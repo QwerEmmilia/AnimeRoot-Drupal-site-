@@ -1,0 +1,10 @@
+uuid: d68e1115-6611-4b5e-acb0-8f09ad311492
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.random_article
+label: 'Random article'
+targetEntityType: node
+cache: true

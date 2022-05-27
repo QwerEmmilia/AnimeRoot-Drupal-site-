@@ -1,0 +1,8 @@
+uuid: 36d556f1-db3d-49d2-95a5-65fc35cce706
+langcode: en
+status: true
+dependencies: {  }
+name: anime
+vid: anime
+description: ''
+weight: -7

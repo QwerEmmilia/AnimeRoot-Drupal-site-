@@ -1,0 +1,29 @@
+uuid: 4af66079-7b3a-4c1c-a01e-7d07b039843e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_article_view_mode2_
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__latest_article_view_mode2__block_1
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:latest_article_view_mode2_-block_1'
+settings:
+  id: 'views_block:latest_article_view_mode2_-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

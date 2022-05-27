@@ -1,0 +1,20 @@
+uuid: c9a9e60a-7bd2-453f-a49e-a2effe201c8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - oembed_providers.bucket.video
+  module:
+    - oembed_providers
+id: remote_video
+label: 'Remote video'
+description: ''
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://oembed_thumbnails/[date:custom:Y-m]'
+  providers:
+    - YouTube
+field_map: {  }

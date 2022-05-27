@@ -1,0 +1,18 @@
+uuid: 4d3715d9-e49f-4416-b7d0-1040c307761a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:a4c6961b-3208-40e1-ac40-ea17e51303db'
+name: Video
+type: video
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

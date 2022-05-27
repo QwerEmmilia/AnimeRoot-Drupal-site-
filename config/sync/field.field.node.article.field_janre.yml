@@ -1,0 +1,37 @@
+uuid: 9b7f552a-8eac-4619-b6e6-a497a7bfb350
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_janre
+    - node.type.article
+    - taxonomy.vocabulary.anime
+    - taxonomy.vocabulary.anime_shop
+    - taxonomy.vocabulary.article
+    - taxonomy.vocabulary.janre
+    - taxonomy.vocabulary.video
+id: node.article.field_janre
+field_name: field_janre
+entity_type: node
+bundle: article
+label: Janre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      anime: anime
+      anime_shop: anime_shop
+      article: article
+      janre: janre
+      video: video
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: janre
+field_type: entity_reference

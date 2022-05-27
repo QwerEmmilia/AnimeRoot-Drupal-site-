@@ -1,0 +1,10 @@
+uuid: a99f9c92-07b6-4668-8a53-8101d102f104
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.picture_autor_summary
+label: 'Picture + Autor + Summary'
+targetEntityType: node
+cache: true

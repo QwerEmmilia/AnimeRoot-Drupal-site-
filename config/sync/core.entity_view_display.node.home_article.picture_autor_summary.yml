@@ -1,0 +1,34 @@
+uuid: 1828482b-14b9-46f3-99ac-35c447c189e4
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.picture_autor_summary
+    - field.field.node.home_article.body
+    - node.type.home_article
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.home_article.picture_autor_summary
+targetEntityType: node
+bundle: home_article
+mode: picture_autor_summary
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,133 @@
+uuid: ce622f65-28fb-44a3-bf84-4de2ab211fb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_janre
+    - field.field.node.article.field_media_for_article
+    - field.field.node.article.field_video
+    - node.type.article
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          ff676aaa-9e0c-4799-bc7a-ee570486774d:
+            uuid: ff676aaa-9e0c-4799-bc7a-ee570486774d
+            region: first
+            configuration:
+              id: 'field_block:node:article:field_media_for_article'
+              label: 'Media for article'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          03329384-88b2-4115-9af9-2761bef2ef26:
+            uuid: 03329384-88b2-4115-9af9-2761bef2ef26
+            region: second
+            configuration:
+              id: 'field_block:node:article:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 100
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4f3597fc-69c2-4bda-b4e3-c153f54f2665:
+            uuid: 4f3597fc-69c2-4bda-b4e3-c153f54f2665
+            region: second
+            configuration:
+              id: 'field_block:node:article:uid'
+              label: 'Authored by'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          a05f9fde-2363-4ba0-935e-f92d85974d8b:
+            uuid: a05f9fde-2363-4ba0-935e-f92d85974d8b
+            region: second
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: above
+                settings:
+                  date_format: custom
+                  custom_date_format: 'M d o'
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: 0ur5-yZyR8pJ3lugC_Micbr6V_tpMWz-yHFhtuLcZo8
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  field_janre: true
+  field_media_for_article: true
+  field_video: true

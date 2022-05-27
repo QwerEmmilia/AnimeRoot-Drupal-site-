@@ -1,0 +1,20 @@
+uuid: 199d6725-dfde-429b-96c8-4256a8a2ffa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_janre
+field_name: field_janre
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: 68b2731a-2a41-43e8-918c-60ab24b39d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.random_article
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__random_article_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:random_article-block_1'
+settings:
+  id: 'views_block:random_article-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

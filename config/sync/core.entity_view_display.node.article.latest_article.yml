@@ -1,0 +1,99 @@
+uuid: cc0e6357-6507-4b28-b36e-c798dfab852f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.latest_article
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_janre
+    - field.field.node.article.field_media_for_article
+    - field.field.node.article.field_video
+    - node.type.article
+    - views.view.latest_article_view_mode1_
+    - views.view.latest_article_view_mode2_
+  module:
+    - comment
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          e6f9cd67-24c9-46ae-a6a7-e94910a0b8e7:
+            uuid: e6f9cd67-24c9-46ae-a6a7-e94910a0b8e7
+            region: content
+            configuration:
+              id: 'views_block:latest_article_view_mode1_-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          905c1321-4c0f-42d4-991b-0f5e6170a836:
+            uuid: 905c1321-4c0f-42d4-991b-0f5e6170a836
+            region: content
+            configuration:
+              id: 'views_block:latest_article_view_mode2_-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
+id: node.article.latest_article
+targetEntityType: node
+bundle: article
+mode: latest_article
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_janre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_media_for_article: true
+  field_video: true

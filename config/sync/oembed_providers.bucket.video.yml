@@ -1,0 +1,9 @@
+uuid: e8919761-e0f7-4e2d-9f19-1e374fae8a1b
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: video
+description: ''
+providers:
+  - YouTube

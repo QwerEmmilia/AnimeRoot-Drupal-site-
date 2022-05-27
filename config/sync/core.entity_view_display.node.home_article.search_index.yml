@@ -1,0 +1,34 @@
+uuid: 914e78b9-00e3-4a89-b3e7-7e199f461d9a
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.home_article.body
+    - node.type.home_article
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.home_article.search_index
+targetEntityType: node
+bundle: home_article
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

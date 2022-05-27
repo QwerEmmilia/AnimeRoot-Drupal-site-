@@ -1,0 +1,8 @@
+uuid: 1782152f-9d42-4fe0-ad29-dccb1aec6ac8
+langcode: en
+status: true
+dependencies: {  }
+name: 'anime shop'
+vid: anime_shop
+description: ''
+weight: 0

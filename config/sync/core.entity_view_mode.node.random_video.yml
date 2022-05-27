@@ -1,0 +1,10 @@
+uuid: 8659b990-e26d-4926-adcc-064da1bc60bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.random_video
+label: 'random video'
+targetEntityType: node
+cache: true

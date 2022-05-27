@@ -1,0 +1,10 @@
+uuid: f2d056a7-d6e7-4eca-b664-c84ef26805fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.big_picture_autor_summary
+label: 'Big Picture + Autor + Summary'
+targetEntityType: node
+cache: true

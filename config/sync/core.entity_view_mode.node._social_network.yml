@@ -1,0 +1,10 @@
+uuid: ad8254d1-5e02-49dc-8c6d-fa5535afbb9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node._social_network
+label: ' social network'
+targetEntityType: node
+cache: true

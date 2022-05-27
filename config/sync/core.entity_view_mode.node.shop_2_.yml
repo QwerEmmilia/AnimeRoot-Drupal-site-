@@ -1,0 +1,10 @@
+uuid: bea90adc-67bd-445c-bb79-5c9f8ba88c70
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.shop_2_
+label: 'Shop (2)'
+targetEntityType: node
+cache: true

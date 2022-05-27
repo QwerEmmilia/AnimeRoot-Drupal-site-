@@ -1,0 +1,10 @@
+uuid: 82019886-6723-4d4f-9091-68696b56348c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node._video_list
+label: ' video list'
+targetEntityType: node
+cache: true
