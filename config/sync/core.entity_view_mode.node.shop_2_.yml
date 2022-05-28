@@ -5,6 +5,6 @@ dependencies:
   module:
     - node
 id: node.shop_2_
-label: 'Shop (2)'
+label: Genre
 targetEntityType: node
 cache: true

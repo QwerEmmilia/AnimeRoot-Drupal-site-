@@ -15,7 +15,7 @@ plugin: social_media_links_block
 settings:
   id: social_media_links_block
   label: 'Social Media Links'
-  label_display: '0'
+  label_display: visible
   provider: social_media_links
   platforms:
     rss:
@@ -27,7 +27,7 @@ settings:
       description: ''
       weight: '-9'
     instagram:
-      value: _yaqwer
+      value: explore/tags/anime/
       description: ''
       weight: '-8'
     facebook:
