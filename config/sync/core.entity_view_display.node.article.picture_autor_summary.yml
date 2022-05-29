@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.node.picture_autor_summary
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_anime_name
     - field.field.node.article.field_janre
     - field.field.node.article.field_media_for_article
     - field.field.node.article.field_video
@@ -126,5 +127,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_anime_name: true
   field_media_for_article: true
   field_video: true

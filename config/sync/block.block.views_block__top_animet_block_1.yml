@@ -1,0 +1,24 @@
+uuid: b6902757-ac61-4380-8f89-6c6d9dac5321
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_animet
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__top_animet_block_1
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'views_block:top_animet-block_1'
+settings:
+  id: 'views_block:top_animet-block_1'
+  label: 'MOST POPULAR TITLE'
+  label_display: visible
+  provider: views
+  views_label: 'MOST POPULAR TITLE'
+  items_per_page: none
+visibility: {  }

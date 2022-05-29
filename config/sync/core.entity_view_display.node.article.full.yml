@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_anime_name
     - field.field.node.article.field_janre
     - field.field.node.article.field_media_for_article
     - field.field.node.article.field_video
@@ -63,7 +64,7 @@ third_party_settings:
                 label: hidden
                 settings:
                   image_link: ''
-                  image_style: large
+                  image_style: ''
                 third_party_settings: {  }
             weight: -9
             additional: {  }
@@ -102,7 +103,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: -6
+            weight: -5
             additional: {  }
           09f773b3-36fe-406e-8059-74eb15f445ad:
             uuid: 09f773b3-36fe-406e-8059-74eb15f445ad
@@ -123,7 +124,7 @@ third_party_settings:
                   custom_date_format: 'M j o'
                   timezone: ''
                 third_party_settings: {  }
-            weight: -4
+            weight: -3
             additional: {  }
           509a9560-0ca6-4b88-b9a9-368da4a2000b:
             uuid: 509a9560-0ca6-4b88-b9a9-368da4a2000b
@@ -142,7 +143,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: -5
+            weight: -4
             additional: {  }
           ffd24a1b-bc21-4e17-b09f-a528b5239891:
             uuid: ffd24a1b-bc21-4e17-b09f-a528b5239891
@@ -162,6 +163,25 @@ third_party_settings:
                   view_mode: full
                 third_party_settings: {  }
             weight: -8
+            additional: {  }
+          476772f1-0739-44ea-8404-9cf1140266bc:
+            uuid: 476772f1-0739-44ea-8404-9cf1140266bc
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_anime_name'
+              label: 'Anime name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: -6
             additional: {  }
         third_party_settings: {  }
 _core:
@@ -209,4 +229,5 @@ content:
     weight: 1
     region: content
 hidden:
+  field_anime_name: true
   field_video: true

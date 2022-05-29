@@ -1,0 +1,29 @@
+uuid: edca1729-b251-4830-b631-1914ccebe778
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anime_name
+    - node.type.article
+    - taxonomy.vocabulary.anime
+id: node.article.field_anime_name
+field_name: field_anime_name
+entity_type: node
+bundle: article
+label: 'Anime name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      anime: anime
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

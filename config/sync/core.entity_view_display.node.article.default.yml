@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_anime_name
     - field.field.node.article.field_janre
     - field.field.node.article.field_media_for_article
     - field.field.node.article.field_video
@@ -44,6 +45,22 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          c238488f-71bb-43bc-a457-fc8a519b9602:
+            uuid: c238488f-71bb-43bc-a457-fc8a519b9602
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_anime_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
@@ -67,6 +84,14 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 110
+    region: content
+  field_anime_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 113
     region: content
   field_janre:
     type: entity_reference_label
