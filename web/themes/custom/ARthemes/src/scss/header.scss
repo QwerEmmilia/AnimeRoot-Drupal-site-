@@ -1,1 +1,33 @@
 
+//РЕГІОН ПІД ЛОГО
+
+.region-header {
+  background-color: black;
+}
+
+/*ЛОГО САЙТУ*/
+
+.field--name-field-media-for-adv {
+  height: 80px;
+  width: 113px;
+  margin: auto;
+}
+
+ //МЕНЮ САЙТУ
+
+.region-primary-menu {
+  background-color: black;
+}
+.menu-toggle {
+  font-family: 'Bebas Neue', cursive;
+}
+.region-primary-menu .menu a {
+  border-radius: 50px;
+  text-shadow: 0 0px #eee;
+  text-align: center;
+}
+
+//.tabs {
+//  opacity: 0;
+//  position: absolute
+//}
