@@ -46,6 +46,7 @@
 /web/robots.txt
 /web/update.php
 /web/web.config
+/web/themes/custom/ARthemes/dist
 
 #custom ignore
 /.idea

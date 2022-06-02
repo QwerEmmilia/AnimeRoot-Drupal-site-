@@ -9,6 +9,9 @@
 .region-header {
   background-color: black; }
 
+.layout-container {
+  background-color: black; }
+
 /*ЛОГО САЙТУ*/
 .field--name-field-media-for-adv {
   height: 80px;
@@ -25,4 +28,16 @@
   border-radius: 50px;
   text-shadow: 0 0px #eee;
   text-align: center; }
+
+/*ПОШУК*/
+.search-block-form {
+  display: none; }
+
+@media screen and (min-width: 1024px) {
+  .region-header {
+    background-color: black; } }
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer.scss ***!
+  \***************************************************************************************************************/
 
