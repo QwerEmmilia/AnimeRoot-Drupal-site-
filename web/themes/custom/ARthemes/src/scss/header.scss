@@ -10,19 +10,18 @@
 
 /*ЛОГО САЙТУ*/
 
-.field--name-field-media-for-adv {
-  height: 80px;
-  width: 113px;
-  margin: auto;
+.region-header {
+  .field--name-field-media-for-adv {
+    height: 80px;
+    width: 113px;
+    margin: auto;
+  }
 }
 
  //МЕНЮ САЙТУ
 
 .region-primary-menu {
   background-color: black;
-}
-.menu-toggle {
-  font-family: 'Bebas Neue', cursive;
 }
 .region-primary-menu .menu a {
   border-radius: 50px;
@@ -36,8 +35,19 @@
   display: none;
 }
 
+/* КОМП'ЮТЕРНА ВЕРСІЯ ХЕДЕРА */
+
 @media screen and (min-width: 1024px) {
-  .region-header {
+  #header.header{
     background-color: black;
+    background-image: none;
+  }
+  .region-header {
+      display: flex;
+      justify-content: center;
+  }
+  .region-primary-menu .menu a {
+    border-radius: 3px;
+    background-color: white;
   }
 }
