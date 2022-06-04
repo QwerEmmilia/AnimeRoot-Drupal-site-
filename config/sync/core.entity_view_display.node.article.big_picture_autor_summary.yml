@@ -49,25 +49,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          c6e153e1-65c1-4028-8185-b5e877bcf545:
-            uuid: c6e153e1-65c1-4028-8185-b5e877bcf545
-            region: content
-            configuration:
-              id: 'field_block:node:article:body'
-              label: Body
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: text_summary_or_trimmed
-                label: hidden
-                settings:
-                  trim_length: 70
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
           19dea78a-417d-4006-a773-ec1bd0bb1748:
             uuid: 19dea78a-417d-4006-a773-ec1bd0bb1748
             region: content
