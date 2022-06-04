@@ -1,0 +1,24 @@
+uuid: 1328c6a3-5911-4f57-8c6d-90f12237ff81
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_animet
+  module:
+    - views
+  theme:
+    - ARthemes
+id: ARthemes_views_block__top_animet_block_1
+theme: ARthemes
+region: footer_first
+weight: 0
+provider: null
+plugin: 'views_block:top_animet-block_1'
+settings:
+  id: 'views_block:top_animet-block_1'
+  label: 'MOST POPULAR TITLE'
+  label_display: visible
+  provider: views
+  views_label: 'MOST POPULAR TITLE'
+  items_per_page: none
+visibility: {  }

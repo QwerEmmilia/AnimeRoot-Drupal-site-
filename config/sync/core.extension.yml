@@ -62,4 +62,6 @@ module:
 theme:
   bartik: 0
   seven: 0
+  ARthemes: 0
+  cust: 0
 profile: standard

@@ -1,0 +1,22 @@
+uuid: e0612a9c-d9e1-48e6-922f-65082509e6ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ARthemes
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: ARthemes_breadcrumbs
+theme: ARthemes
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

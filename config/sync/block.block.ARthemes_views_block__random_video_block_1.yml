@@ -1,0 +1,24 @@
+uuid: 5928a5a7-881d-416f-a41d-dbb921a156f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.random_video
+  module:
+    - views
+  theme:
+    - ARthemes
+id: ARthemes_views_block__random_video_block_1
+theme: ARthemes
+region: footer_fourth
+weight: -10
+provider: null
+plugin: 'views_block:random_video-block_1'
+settings:
+  id: 'views_block:random_video-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

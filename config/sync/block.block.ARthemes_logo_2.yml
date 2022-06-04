@@ -1,0 +1,25 @@
+uuid: bd70a3a8-a243-4f00-85d3-62dc47dfa45e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:adv:6d8779a0-b092-49ee-994e-55d983145abc'
+  module:
+    - block_content
+  theme:
+    - ARthemes
+id: ARthemes_logo_2
+theme: ARthemes
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:6d8779a0-b092-49ee-994e-55d983145abc'
+settings:
+  id: 'block_content:6d8779a0-b092-49ee-994e-55d983145abc'
+  label: logo
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
