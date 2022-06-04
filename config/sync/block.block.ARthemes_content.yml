@@ -1,0 +1,22 @@
+uuid: 6b94ae85-6b68-42cf-be64-a58c06f6ac6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ARthemes
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: ARthemes_content
+theme: ARthemes
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

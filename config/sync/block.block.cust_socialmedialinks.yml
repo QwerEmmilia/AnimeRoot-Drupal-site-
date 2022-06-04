@@ -1,0 +1,129 @@
+uuid: ca957895-1453-4c16-88e3-890e8ba8b417
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - cust
+id: cust_socialmedialinks
+theme: cust
+region: sidebar_second
+weight: -9
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  label_display: visible
+  provider: social_media_links
+  platforms:
+    rss:
+      value: ''
+      description: ''
+      weight: '-10'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-9'
+    instagram:
+      value: explore/tags/anime/
+      description: ''
+      weight: '-8'
+    facebook:
+      value: zelenskiy.official
+      description: ''
+      weight: '-7'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-6'
+    github:
+      value: ''
+      description: ''
+      weight: '-5'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-4'
+    xing:
+      value: ''
+      description: ''
+      weight: '-3'
+    email:
+      value: ''
+      description: ''
+      weight: '-2'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-1'
+    twitter:
+      value: ServiceSsu
+      description: ''
+      weight: '0'
+    website:
+      value: ''
+      description: ''
+      weight: '1'
+    contact:
+      value: ''
+      description: ''
+      weight: '2'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '3'
+    drupal:
+      value: ''
+      description: ''
+      weight: '4'
+    youtube:
+      value: ''
+      description: ''
+      weight: '5'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '6'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '7'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '8'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '9'
+    behance:
+      value: ''
+      description: ''
+      weight: '10'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '11'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '12'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '13'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:5x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

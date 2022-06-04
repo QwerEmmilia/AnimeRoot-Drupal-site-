@@ -1,0 +1,26 @@
+uuid: b06a60db-51ec-4aad-ad67-71c22bcf80fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ARthemes
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: ARthemes_page_title
+theme: ARthemes
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /video/

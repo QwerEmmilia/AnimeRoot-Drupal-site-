@@ -1,0 +1,22 @@
+uuid: b7072c77-08d9-49e3-82dc-8396878d9a87
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ARthemes
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: ARthemes_help
+theme: ARthemes
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

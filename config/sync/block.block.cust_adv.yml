@@ -1,0 +1,25 @@
+uuid: fdc33d44-d5be-4208-b4a6-645c2984c200
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:adv:79981f2c-b321-4d89-8d54-a289f4a32e00'
+  module:
+    - block_content
+  theme:
+    - cust
+id: cust_adv
+theme: cust
+region: sidebar_second
+weight: 1
+provider: null
+plugin: 'block_content:79981f2c-b321-4d89-8d54-a289f4a32e00'
+settings:
+  id: 'block_content:79981f2c-b321-4d89-8d54-a289f4a32e00'
+  label: adv
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

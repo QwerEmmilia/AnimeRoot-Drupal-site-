@@ -1,0 +1,25 @@
+uuid: 9d75c478-4e06-4741-b50d-b10a51d556de
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:adv:bed128e2-eba2-4ad6-8d13-5a14a1553a51'
+  module:
+    - block_content
+  theme:
+    - cust
+id: cust_adv2
+theme: cust
+region: footer_third
+weight: -10
+provider: null
+plugin: 'block_content:bed128e2-eba2-4ad6-8d13-5a14a1553a51'
+settings:
+  id: 'block_content:bed128e2-eba2-4ad6-8d13-5a14a1553a51'
+  label: adv2
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

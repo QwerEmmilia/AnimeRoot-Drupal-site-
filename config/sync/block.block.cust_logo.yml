@@ -1,0 +1,25 @@
+uuid: 58c0bcae-fd95-483b-9d53-be9d589cca7c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:adv:6d8779a0-b092-49ee-994e-55d983145abc'
+  module:
+    - block_content
+  theme:
+    - cust
+id: cust_logo
+theme: cust
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:6d8779a0-b092-49ee-994e-55d983145abc'
+settings:
+  id: 'block_content:6d8779a0-b092-49ee-994e-55d983145abc'
+  label: logo
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

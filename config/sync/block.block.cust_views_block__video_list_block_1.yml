@@ -1,0 +1,29 @@
+uuid: e38ca114-7a54-493d-aeb3-3a33b6166dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.video_list
+  module:
+    - system
+    - views
+  theme:
+    - cust
+id: cust_views_block__video_list_block_1
+theme: cust
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:video_list-block_1'
+settings:
+  id: 'views_block:video_list-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /video

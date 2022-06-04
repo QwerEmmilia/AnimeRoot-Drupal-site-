@@ -1,0 +1,24 @@
+uuid: 31994758-d888-4fef-bc9f-0aa50192319d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.random_article_2_
+  module:
+    - views
+  theme:
+    - cust
+id: cust_views_block__random_article_2__block_1
+theme: cust
+region: footer_second
+weight: -10
+provider: null
+plugin: 'views_block:random_article_2_-block_1'
+settings:
+  id: 'views_block:random_article_2_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

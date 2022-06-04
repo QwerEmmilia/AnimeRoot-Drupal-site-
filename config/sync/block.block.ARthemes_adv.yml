@@ -1,0 +1,25 @@
+uuid: 62f277a2-0bfc-4d58-a04e-8a51b1d9f43d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:adv:79981f2c-b321-4d89-8d54-a289f4a32e00'
+  module:
+    - block_content
+  theme:
+    - ARthemes
+id: ARthemes_adv
+theme: ARthemes
+region: sidebar_second
+weight: 1
+provider: null
+plugin: 'block_content:79981f2c-b321-4d89-8d54-a289f4a32e00'
+settings:
+  id: 'block_content:79981f2c-b321-4d89-8d54-a289f4a32e00'
+  label: adv
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
