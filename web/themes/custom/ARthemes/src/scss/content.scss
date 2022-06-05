@@ -73,3 +73,26 @@
     font-size: 23px;
   }
 }
+
+/*ШОП*/
+.block-views-blockshop-block-1 {
+  text-align: center;
+  h2 {
+    background-color: silver;
+    border-radius: 10px;
+    font-weight: Bold;
+  }
+  img {
+    margin-left: 0px;
+    border-style: groove;
+    border-color: #2b2b2b;
+    margin-top: 50px;
+  }
+  a {
+    font-size: 20px;go
+    font-weight: bolder;
+  }
+  .field--name-field-media-for-article {
+    border-top: 3px solid;
+  }
+}
