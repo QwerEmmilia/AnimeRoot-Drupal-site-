@@ -131,25 +131,30 @@
     background-image: url("/home/emillia/Pictures/media/108075 (1).jpg");
     background-size: auto;
   }
-  div#main-wrapper.layout-main-wrapper.layout-container.clearfix{
-    background: rgba(0, 170, 238, 0.23);
-  }
+  //div#main-wrapper.layout-main-wrapper.layout-container.clearfix {
+  //  background: rgba(0, 170, 238, 0.1);
+  //}
+
   /* БОКОВА РЕКЛАМА*/
 
-    .region-sidebar-second {
-      .block-block-content79981f2c-b321-4d89-8d54-a289f4a32e00 {
-        display: block;
-      }
+  .region-sidebar-second {
+    .block-block-content79981f2c-b321-4d89-8d54-a289f4a32e00 {
+      display: block;
     }
+  }
 
   /*РАНДОМ СТАТЯ*/
-
   .block-views-blockrandom-article-block-1 {
     display: block;
+    text-align: center;
+    img {
+      border-style: solid;
+      border-color: black;
+    }
   }
   .sidebar .block {
     padding: 0px 0px;
-    }
+  }
 
   /*СТАТІ*/
 
@@ -161,28 +166,28 @@
   }
   .field--name-title {
     font-size: 13px;
+
     a {
       border-bottom: none;
     }
   }
-  .field--name-field-media-for-article{
+  .field--name-field-media-for-article {
     a {
       border-bottom: none;
     }
   }
-  .block-views-blocklatest-article-view-mode2--block-1{
-    .block-field-blocknodearticletitle{
-      a{
+  .block-views-blocklatest-article-view-mode2--block-1 {
+    .block-field-blocknodearticletitle {
+      a {
         @include overflow-text;
       }
     }
   }
-  .view-id-latest_article_view_mode1_{
-    a{
+  .view-id-latest_article_view_mode1_ {
+    a {
       font-size: 23px;
     }
   }
-
   /* СОЦ.МЕРЕЖІ */
 
   .social-media-links--platforms {
@@ -202,9 +207,6 @@
   }
   .sidebar .section {
     padding: 0px 0px 0px;
-  }
-  .sidebar .block {
-    margin: 0 0 0px;
   }
   .sidebar .block .content {
     font-size: 10px;
