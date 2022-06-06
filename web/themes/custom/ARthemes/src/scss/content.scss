@@ -127,13 +127,28 @@
 
 
 @media screen and (min-width: 1024px) {
-
+  div#page {
+    background-image: url("/home/emillia/Pictures/media/108075 (1).jpg");
+    background-size: auto;
+  }
+  div#main-wrapper.layout-main-wrapper.layout-container.clearfix{
+    background: rgba(0, 170, 238, 0.23);
+  }
   /* БОКОВА РЕКЛАМА*/
 
     .region-sidebar-second {
       .block-block-content79981f2c-b321-4d89-8d54-a289f4a32e00 {
         display: block;
       }
+    }
+
+  /*РАНДОМ СТАТЯ*/
+
+  .block-views-blockrandom-article-block-1 {
+    display: block;
+  }
+  .sidebar .block {
+    padding: 0px 0px;
     }
 
   /*СТАТІ*/
