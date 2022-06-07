@@ -38,3 +38,18 @@
   border-style: solid;
 
 }
+
+
+@media screen and (min-width: 1024px) {
+
+  .views-view-grid.horizontal .views-row  {
+    border-bottom: none;
+  }
+
+  .node--view-mode-random-video {
+    border: none;
+  }
+  .node--view-mode-random-article {
+    border: none;
+  }
+}
