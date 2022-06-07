@@ -1,3 +1,12 @@
+.site-footer {
+  background-image: url("/home/emillia/Pictures/media/quan-ta-fullmetal-alchemist-fanart.jpg");
+}
+
+.site-footer .block {
+  padding: 0px;
+  border: none;
+}
+
 
 /*ЛОГО*/
 
@@ -7,4 +16,25 @@
     width: 83px;
     margin: auto;
   }
+}
+
+/*РАНДОМ ВІДЕО*/
+
+.node--view-mode-random-video {
+  border-style: solid;
+  text-align: center;
+
+}
+/*РЕКЛАМА*/
+
+/*РАНДОМНА СТАТТЯ*/
+
+.site-footer__top .content li a {
+  border-bottom: none;
+}
+
+.node--view-mode-random-article {
+  text-align: center;
+  border-style: solid;
+
 }
