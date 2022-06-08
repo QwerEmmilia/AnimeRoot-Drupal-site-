@@ -72,6 +72,10 @@
   font-size: 13px;
   a {
     border-bottom: none;
+    color: black;
+  }
+  a:hover {
+    color: black;
   }
 }
 .field--name-field-media-for-article{
@@ -131,9 +135,9 @@
     background-image: url("/home/emillia/Pictures/media/108075 (1).jpg");
     background-size: auto;
   }
-  //div#main-wrapper.layout-main-wrapper.layout-container.clearfix {
-  //  background: rgba(0, 170, 238, 0.1);
-  //}
+  div#main-wrapper.layout-main-wrapper.layout-container.clearfix {
+    box-shadow: 0 0 500px rgba(0,0,0,0.5);
+  }
 
   /* БОКОВА РЕКЛАМА*/
 
@@ -185,7 +189,7 @@
   }
   .view-id-latest_article_view_mode1_ {
     a {
-      font-size: 23px;
+      font-size: 20px;
     }
   }
   /* СОЦ.МЕРЕЖІ */
