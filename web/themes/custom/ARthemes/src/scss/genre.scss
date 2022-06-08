@@ -1,0 +1,32 @@
+
+.block-field-blocknodegenrefield-taggenre {
+  .field__items {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    a {
+      padding: 5px;
+      background: orange;
+      color: black;
+      border: none;
+    }
+    a:hover {
+      background: #0a6eb4;
+      color: white;
+    }
+  }
+  div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}
+.breadcrumb {
+  a {
+    color: black;
+    border: none;
+  }
+  a:hover {
+    color: black;
+  }
+}
