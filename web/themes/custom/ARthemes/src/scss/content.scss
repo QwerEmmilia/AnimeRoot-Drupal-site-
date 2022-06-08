@@ -153,11 +153,13 @@
 
 @media screen and (min-width: 1024px) {
   div#page {
-    background-image: url("/home/emillia/Pictures/media/108075 (1).jpg");
-    background-size: auto;
+    //background-image: url("/home/emillia/Pictures/media/108075 (1).jpg") ;
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(95,96,97,1) 100%);
   }
   div#main-wrapper.layout-main-wrapper.layout-container.clearfix {
-    box-shadow: 0 0 500px rgba(0,0,0,0.5);
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
   }
 
   /* БОКОВА РЕКЛАМА*/
