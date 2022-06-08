@@ -63,7 +63,9 @@
 /*СТАТІ*/
 
 .view-id-latest_article_view_mode2_ {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   .views-view-grid {
+    margin-left: 15px;
     display: flex;
     font-size: 10px;
   }

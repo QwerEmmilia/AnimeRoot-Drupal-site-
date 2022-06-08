@@ -1,8 +1,3 @@
-@import 'global.scss';
-
-.site-footer {
-  background-image: url("/home/emillia/Pictures/media/quan-ta-fullmetal-alchemist-fanart.jpg");
-}
 
 .site-footer .block {
   padding: 0px;
@@ -22,8 +17,7 @@
 
 /*РАНДОМ ВІДЕО*/
 
-.node--view-mode-random-video {
-  border-style: solid;
+.node--view-mode-random-video {iy
   text-align: center;
 
 }
@@ -37,12 +31,26 @@
 
 .node--view-mode-random-article {
   text-align: center;
-  border-style: solid;
 
 }
 
 
+
+
+
 @media screen and (min-width: 1024px) {
+
+  /*НАЛАШТУВАННЯ ТОП АНІМЕ ТА РАНДОМ СТАННІ*/
+
+  .site-footer__top .content li a {
+    padding: 0;
+    text-indent: 0;
+  }
+  .site-footer__top .content li a:hover {
+    background: none;
+    border:none;
+  }
+    /*ОФФ БОРДЕР*/
 
   .views-view-grid.horizontal .views-row  {
     border-bottom: none;
@@ -53,5 +61,71 @@
   }
   .node--view-mode-random-article {
     border: none;
+  }
+}
+
+/*ТОП АНІМЕ*/
+
+.block-views-blocktop-anime-block-1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  .item-list {
+    color: gold;
+    font-weight: bold;
+
+  }
+  .views-field-name {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .views-field-nid {
+    display: none;
+
+  }
+}
+
+/*РЕКЛАМА*/
+
+.region-footer-third {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/*РАНДОМ СТАТТЯ*/
+
+.node--view-mode-random-article {
+  display: block;
+  text-align: center;
+  img {
+    border-style: solid;
+    border-color: orange;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  a {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  }
+  a:hover {
+    background-color: orange;
+  }
+}
+
+/*РАНДОМ ВІДЕО*/
+.site-footer {
+  .node--view-mode-random-video {
+    //box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    a {
+      background-color: orange;
+      padding: 3px;
+      border-radius: 10px;
+    }
   }
 }
