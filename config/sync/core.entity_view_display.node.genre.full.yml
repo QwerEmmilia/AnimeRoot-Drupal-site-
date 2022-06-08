@@ -1,0 +1,36 @@
+uuid: 7cc7b635-a20f-4ffa-8944-616f14fd3ec6
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.genre.body
+    - field.field.node.genre.field_taggenre
+    - node.type.genre
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.genre.full
+targetEntityType: node
+bundle: genre
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_taggenre: true

@@ -1,0 +1,11 @@
+uuid: 7b6eb24a-31de-480f-8fcf-ede56c3bc01a
+langcode: en
+status: true
+dependencies: {  }
+id: test
+label: test
+classes: test
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

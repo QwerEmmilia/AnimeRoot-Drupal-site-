@@ -1,0 +1,22 @@
+uuid: e2fbdd93-6351-4d03-b4e3-fc5853200edb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.genre
+id: node.genre.promote
+field_name: promote
+entity_type: node
+bundle: genre
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

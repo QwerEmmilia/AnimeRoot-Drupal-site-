@@ -1,17 +1,18 @@
-uuid: 63b72720-31a8-44be-a4e2-43771d41c906
+uuid: f91646eb-9c20-4a70-87ab-3ea3838db00d
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - taxonomy
     - user
-id: top_tagsarticle_
-label: 'Top TagsArticle '
+id: top_anime
+label: 'top anime'
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: taxonomy_term_field_data
+base_field: tid
 display:
   default:
     id: default
@@ -19,15 +20,65 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Top TagsArticle '
+      title: 'top anime'
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: reverse__node__field_anime_name
+          group_type: count
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
           plugin_id: field
           label: ''
           exclude: false
@@ -62,7 +113,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -71,9 +122,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
+          type: number_integer
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -84,11 +134,18 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          set_precision: false
+          precision: 0
+          decimal: .
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -108,29 +165,28 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        nid:
+          id: nid
           table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
+          field: nid
+          relationship: reverse__node__field_anime_name
+          group_type: count
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
+          entity_field: nid
+          plugin_id: standard
           order: DESC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
           id: status
-          table: node_field_data
+          table: taxonomy_term_field_data
           field: status
-          entity_type: node
+          entity_type: taxonomy_term
           entity_field: status
           plugin_id: boolean
           value: '1'
@@ -140,7 +196,14 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: default
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ol
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
       query:
@@ -151,7 +214,18 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        reverse__node__field_anime_name:
+          id: reverse__node__field_anime_name
+          table: taxonomy_term_field_data
+          field: reverse__node__field_anime_name
+          relationship: none
+          group_type: group
+          admin_label: field_anime_name
+          entity_type: taxonomy_term
+          plugin_id: entity_reverse
+          required: false
+      group_by: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -160,7 +234,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - 'user.node_grants:view'
         - user.permissions
       tags: {  }
   block_1:
@@ -175,6 +248,5 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - 'user.node_grants:view'
         - user.permissions
       tags: {  }
