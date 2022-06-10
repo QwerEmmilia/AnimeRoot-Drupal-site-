@@ -4,10 +4,44 @@ status: true
 dependencies:
   config:
     - field.field.node.genre.body
+    - field.field.node.genre.field_taggenre
     - node.type.genre
   module:
+    - layout_builder
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          044bf0b1-1296-400c-92ca-f13013a195bc:
+            uuid: 044bf0b1-1296-400c-92ca-f13013a195bc
+            region: content
+            configuration:
+              id: 'field_block:node:genre:field_taggenre'
+              label: taggenre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.genre.default
 targetEntityType: node
 bundle: genre
@@ -25,4 +59,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_taggenre: true
