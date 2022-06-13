@@ -4,4 +4,6 @@ import './scss/content.scss';
 import './scss/footer.scss';
 import './scss/genre.scss';
 import './scss/fullcontent.scss';
+import './scss/video.scss';
+
 
