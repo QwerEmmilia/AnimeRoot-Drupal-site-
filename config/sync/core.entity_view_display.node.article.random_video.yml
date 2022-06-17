@@ -63,7 +63,7 @@ third_party_settings:
                 type: string
                 label: hidden
                 settings:
-                  link_to_entity: true
+                  link_to_entity: false
                 third_party_settings: {  }
             weight: 1
             additional: {  }

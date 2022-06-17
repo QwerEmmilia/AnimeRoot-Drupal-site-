@@ -42,12 +42,28 @@ third_party_settings:
                 view_mode: view_mode
               formatter:
                 type: entity_reference_entity_view
-                label: hidden
+                label: visually_hidden
                 settings:
                   view_mode: full
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: video-list
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
           a8b981cb-9e38-4635-b780-217ef7c0970d:
             uuid: a8b981cb-9e38-4635-b780-217ef7c0970d
             region: content
@@ -67,8 +83,59 @@ third_party_settings:
                   custom_date_format: 'M j o'
                   timezone: ''
                 third_party_settings: {  }
+            weight: 2
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: data-videolist
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+          2cee8e23-7f2f-408d-a64f-f2c7f5db70e9:
+            uuid: 2cee8e23-7f2f-408d-a64f-f2c7f5db70e9
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
             weight: 1
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: title-videolist
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE

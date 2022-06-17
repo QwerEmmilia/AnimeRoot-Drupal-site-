@@ -44,7 +44,7 @@ third_party_settings:
                 type: media_thumbnail
                 label: hidden
                 settings:
-                  image_link: content
+                  image_link: ''
                   image_style: medium
                 third_party_settings: {  }
             weight: 0
@@ -64,7 +64,7 @@ third_party_settings:
                 type: string
                 label: hidden
                 settings:
-                  link_to_entity: true
+                  link_to_entity: false
                 third_party_settings: {  }
             weight: 1
             additional: {  }
