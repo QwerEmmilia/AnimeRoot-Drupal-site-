@@ -295,6 +295,7 @@ third_party_settings:
                   class: ''
                   style: ''
                   data: ''
+
           488e78e2-6408-4936-919a-b04f51a2e02a:
             uuid: 488e78e2-6408-4936-919a-b04f51a2e02a
             region: content
@@ -315,6 +316,7 @@ third_party_settings:
                 third_party_settings: {  }
             weight: -1
             additional: {  }
+
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE

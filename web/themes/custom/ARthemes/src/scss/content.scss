@@ -187,6 +187,7 @@
       padding: 5px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font-size: 8px;
 
     }
   }
@@ -195,8 +196,12 @@
   }
 
   /*СТАТІ*/
+  .views-col:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 
-  .view-id-latest_article_view_mode2_ {
+
+    .view-id-latest_article_view_mode2_ {
     .views-view-grid {
       display: block;
       font-size: 10px;
