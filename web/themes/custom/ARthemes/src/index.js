@@ -6,7 +6,6 @@ import './scss/genre.scss';
 
 import './scss/comment.scss';
 import './scss/totop.scss';
-=======
 import './scss/fullcontent.scss';
 import './scss/video.scss';
 

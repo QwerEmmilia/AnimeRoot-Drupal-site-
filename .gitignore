@@ -47,7 +47,7 @@
 /web/update.php
 /web/web.config
 /web/themes/custom/ARthemes/dist
-
+gi
 #custom ignore
 /.idea
 /.editorconfig
