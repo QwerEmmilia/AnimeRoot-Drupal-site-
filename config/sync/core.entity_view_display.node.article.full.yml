@@ -295,6 +295,28 @@ third_party_settings:
                   class: ''
                   style: ''
                   data: ''
+
+          488e78e2-6408-4936-919a-b04f51a2e02a:
+            uuid: 488e78e2-6408-4936-919a-b04f51a2e02a
+            region: content
+            configuration:
+              id: 'field_block:node:article:comment'
+              label: Comments
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: comment_default
+                label: hidden
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: -1
+            additional: {  }
+
         third_party_settings: {  }
 _core:
   default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
