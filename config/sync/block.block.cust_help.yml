@@ -1,0 +1,22 @@
+uuid: ff4c491e-06df-488e-a126-98e2de73eab5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cust
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: cust_help
+theme: cust
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

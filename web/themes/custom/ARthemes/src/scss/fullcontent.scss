@@ -1,0 +1,49 @@
+.full-title {
+  span {
+    font-size: 30px;
+  }
+}
+.full-img {
+  text-align: center;
+}
+.full-teg {
+  .field__items {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    a {
+      padding: 2px;
+      background: orange;
+      color: black;
+      border: none;
+    }
+    a:hover {
+      background: #0a6eb4;
+      color: white;
+    }
+  }
+  div {
+    padding-left: 5px;
+  }
+}
+.full-name {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+  a {
+    color: black;
+
+  }
+  a:hover {
+    color: black;
+  }
+}
+.full-time {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+}
+
+.full-animename {
+  display: none;
+}

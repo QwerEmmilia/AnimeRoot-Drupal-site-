@@ -27,6 +27,7 @@ third_party_settings:
         layout_settings:
           label: ''
           context_mapping: {  }
+          layout_builder_styles_style: test
         components:
           e4da849e-35d6-458b-b568-386d56f79edf:
             uuid: e4da849e-35d6-458b-b568-386d56f79edf
@@ -44,7 +45,23 @@ third_party_settings:
                   link: false
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: test
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
           c238488f-71bb-43bc-a457-fc8a519b9602:
             uuid: c238488f-71bb-43bc-a457-fc8a519b9602
             region: content

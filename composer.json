@@ -28,6 +28,8 @@
         "drupal/devel": "^4.1",
         "drupal/ds": "^3.13",
         "drupal/imce": "^2.4",
+        "drupal/layout_builder_component_attributes": "^2.0",
+        "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/oembed_providers": "^2.0",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.6",

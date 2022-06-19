@@ -1,11 +1,9 @@
 
+
 //РЕГІОН ПІД ЛОГО
 
 .region-header {
-  background-color: black;
-}
-.layout-container{
-  background-color: black;
+  background-color: #e39f1e;
 }
 
 /*ЛОГО САЙТУ*/
@@ -21,7 +19,7 @@
  //МЕНЮ САЙТУ
 
 .region-primary-menu {
-  background-color: black;
+  background-color:  #e39f1e;
 }
 .region-primary-menu .menu a {
   border-radius: 50px;
@@ -39,7 +37,7 @@
 
 @media screen and (min-width: 1024px) {
   #header.header{
-    background-color: black;
+    background-color:  #e39f1e;
     background-image: none;
   }
   .region-header {

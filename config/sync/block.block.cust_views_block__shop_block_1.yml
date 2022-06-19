@@ -1,0 +1,29 @@
+uuid: 09462187-d8c4-4bc1-b467-db29dd030401
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.shop
+  module:
+    - system
+    - views
+  theme:
+    - cust
+id: cust_views_block__shop_block_1
+theme: cust
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:shop-block_1'
+settings:
+  id: 'views_block:shop-block_1'
+  label: SHOP
+  label_display: visible
+  provider: views
+  views_label: SHOP
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

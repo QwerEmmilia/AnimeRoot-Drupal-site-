@@ -1,0 +1,26 @@
+uuid: a1805498-65c1-415d-aef1-72c4326d8b65
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cust
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: cust_page_title
+theme: cust
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /video/

@@ -2,3 +2,8 @@ global-styling:
   css:
     component:
       dist/style.css: {}
+  js:
+    src/js/scrollup.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

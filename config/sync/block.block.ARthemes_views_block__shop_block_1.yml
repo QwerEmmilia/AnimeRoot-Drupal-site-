@@ -1,0 +1,29 @@
+uuid: 5f2ba71b-0b5a-478d-ba15-3e8da7b2886b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.shop
+  module:
+    - system
+    - views
+  theme:
+    - ARthemes
+id: ARthemes_views_block__shop_block_1
+theme: ARthemes
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:shop-block_1'
+settings:
+  id: 'views_block:shop-block_1'
+  label: SHOP
+  label_display: visible
+  provider: views
+  views_label: SHOP
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

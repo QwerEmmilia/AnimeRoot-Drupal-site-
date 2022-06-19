@@ -1,3 +1,5 @@
+@import "mixin";
+
 /**/
 /* НАВІГАЦІЯ СТАТІ*/
 
@@ -21,6 +23,12 @@
 }
 
 /* СОЦ.МЕРЕЖІ */
+.social-media-links--platforms {
+  a {
+    border-bottom: none;
+    margin-left: 50px;
+  }
+}
 .fa-instagram {
   color: black;
 }
@@ -40,8 +48,236 @@
   font-size: 10px;
 }
 
+.region-sidebar-second {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  border-top: 3px solid;
+  h2 {
+    font-size: 13px;
+    text-shadow: 0 0px 0 #fff;
+    padding-bottom: 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+}
 /*СТАТІ*/
 
-*{
-  width: 1px;
+.view-id-latest_article_view_mode2_ {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  .views-view-grid {
+    margin-left: 15px;
+    display: flex;
+    font-size: 10px;
+  }
+}
+.field--name-title {
+  font-size: 13px;
+  a {
+    border-bottom: none;
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+}
+.field--name-field-media-for-article{
+  a {
+    border-bottom: none;
+  }
+}
+.block-views-blocklatest-article-view-mode2--block-1{
+  .block-field-blocknodearticletitle{
+    a{
+      @include overflow-text;
+    }
+  }
+}
+.view-id-latest_article_view_mode1_{
+  a{
+    font-size: 23px;
+  }
+}
+
+/*ШОП*/
+.block-views-blockshop-block-1 {
+  text-align: center;
+  h2 {
+    background-color: orange;
+    border-radius: 10px;
+    font-weight: Bold;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  img {
+    margin-left: 0px;
+    border-style: groove;
+    border-color: orange;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  a {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .block-field-blocknodearticletitle {
+    background-color: orange;
+    border-radius: 10px;
+    span {
+      font-size: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  }
+  .block-field-blocknodearticletitle:hover {
+    background-color: #0a6eb4;
+    span {
+      color: white;
+    }
+  }
+  .field--name-field-media-for-article {
+    border-top: 3px solid;
+  }
+}
+
+
+
+
+
+
+
+/* КОМП'ЮТЕРНА ВЕРСІЯ ХЕДЕРА */
+
+
+
+
+@media screen and (min-width: 1024px) {
+  div#page {
+    //background-image: url("/home/emillia/Pictures/media/108075 (1).jpg") ;
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(95,96,97,1) 100%);
+  }
+  div#main-wrapper.layout-main-wrapper.layout-container.clearfix {
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  }
+
+  /* БОКОВА РЕКЛАМА*/
+
+  .region-sidebar-second {
+    .block-block-content79981f2c-b321-4d89-8d54-a289f4a32e00 {
+      display: block;
+    }
+  }
+
+  /*РАНДОМ СТАТЯ*/
+  .block-views-blockrandom-article-block-1 {
+    display: block;
+    text-align: center;
+    img {
+      margin-left: 40px;
+      border-style: solid;
+      border-color: orange;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    a {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: orange;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font-size: 15px;
+
+    }
+  }
+  .sidebar .block {
+    padding: 0px 0px;
+  }
+
+  /*СТАТІ*/
+  .views-col:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+    .view-id-latest_article_view_mode2_ {
+    .views-view-grid {
+      display: block;
+      font-size: 10px;
+    }
+  }
+  .field--name-title {
+    font-size: 13px;
+
+    a {
+      border-bottom: none;
+    }
+  }
+  .field--name-field-media-for-article {
+    a {
+      border-bottom: none;
+    }
+  }
+  .block-views-blocklatest-article-view-mode2--block-1 {
+    .block-field-blocknodearticletitle {
+      a {
+        @include overflow-text;
+      }
+    }
+  }
+  .view-id-latest_article_view_mode1_ {
+    a {
+      font-size: 20px;
+    }
+  }
+  /* СОЦ.МЕРЕЖІ */
+
+  .social-media-links--platforms {
+    a {
+      border-bottom: none;
+      margin-left: 45px;
+    }
+  }
+  .fa-instagram {
+    color: black;
+  }
+  .fa-facebook {
+    color: black;
+  }
+  .fa-twitter {
+    color: black;
+  }
+  .sidebar .section {
+    padding: 0px 0px 0px;
+  }
+  .sidebar .block .content {
+    font-size: 10px;
+  }
+  .region-sidebar-second {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top: 0px solid;
+    h2 {
+      font-size: 13px;
+      text-shadow: 0 0px 0 #fff;
+      padding-bottom: 0px;
+      border-bottom: 1px solid black;
+      text-align: center;
+    }
+  }
+}
+
+/*ШОП*/
+.block-views-blockshop-block-1 {
+  text-align: center;
+  .field--name-field-media-for-article {
+    border-top: 0px solid;
+  }
+}
+
+/*РЕКЛАМА*/
+
+.block-block-content79981f2c-b321-4d89-8d54-a289f4a32e00 {
+  img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 }

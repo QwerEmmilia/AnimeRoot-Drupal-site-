@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.genre.body
+    - field.field.node.genre.field_taggenre
     - node.type.genre
   module:
     - path
@@ -26,6 +27,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_taggenre:
+    type: options_buttons
+    weight: 122
     region: content
     settings: {  }
     third_party_settings: {  }

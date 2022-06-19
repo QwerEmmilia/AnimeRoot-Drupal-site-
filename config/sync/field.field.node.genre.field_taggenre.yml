@@ -1,0 +1,29 @@
+uuid: 7979417c-6a30-453f-9bcf-575a9eb08f2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taggenre
+    - node.type.genre
+    - taxonomy.vocabulary.janre
+id: node.genre.field_taggenre
+field_name: field_taggenre
+entity_type: node
+bundle: genre
+label: taggenre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      janre: janre
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: anime
+field_type: entity_reference

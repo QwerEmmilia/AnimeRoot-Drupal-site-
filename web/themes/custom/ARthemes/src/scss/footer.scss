@@ -1,0 +1,133 @@
+
+.site-footer .block {
+  padding: 0px;
+  border: none;
+}
+
+
+/*ЛОГО*/
+
+.site-footer {
+  .block-block-content6d8779a0-b092-49ee-994e-55d983145abc {
+    height: 50px;
+    width: 83px;
+    margin: auto;
+  }
+}
+
+/*РАНДОМ ВІДЕО*/
+
+.node--view-mode-random-video {
+  text-align: center;
+
+}
+/*РЕКЛАМА*/
+
+/*РАНДОМНА СТАТТЯ*/
+
+.site-footer__top .content li a {
+  border-bottom: none;
+}
+
+.node--view-mode-random-article {
+  text-align: center;
+
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  /*НАЛАШТУВАННЯ ТОП АНІМЕ ТА РАНДОМ СТАННІ*/
+
+  .site-footer__top .content li a {
+    padding: 0;
+    text-indent: 0;
+  }
+  .site-footer__top .content li a:hover {
+    background: none;
+    border:none;
+  }
+    /*ОФФ БОРДЕР*/
+
+  .views-view-grid.horizontal .views-row  {
+    border-bottom: none;
+  }
+
+  .node--view-mode-random-video {
+    border: none;
+  }
+  .node--view-mode-random-article {
+    border: none;
+  }
+}
+
+/*ТОП АНІМЕ*/
+
+.block-views-blocktop-anime-block-1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  .item-list {
+    color: gold;
+    font-weight: bold;
+
+  }
+  .views-field-name {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .views-field-nid {
+    display: none;
+
+  }
+}
+
+/*РЕКЛАМА*/
+
+.region-footer-third {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/*РАНДОМ СТАТТЯ*/
+
+.node--view-mode-random-article {
+  display: block;
+  text-align: center;
+  img {
+    border-style: solid;
+    border-color: orange;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  a {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  }
+  a:hover {
+    background-color: orange;
+  }
+}
+
+/*РАНДОМ ВІДЕО*/
+.site-footer {
+  .node--view-mode-random-video {
+    //box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    a {
+      background-color: orange;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font-size: 8px;
+    }
+  }
+}
